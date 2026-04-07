@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Authentication</title>
+    <script>
+        function authenticateUser() {
+            const username = prompt("Enter username:");
+            const password = prompt("Enter password:");
+
+            // Example credentials
+            const validUsername = "Gani";
+            const validPassword = "12345";
+
+            if(username === validUsername && password === validPassword) {
+                alert("Login Successful!");
+                document.getElementById("auth").innerHTML = "<b>Welcome, " + username + "!</b>";
+            } else {
+                alert("Invalid credentials!");
+                document.getElementById("auth").innerHTML = "<b>Access Denied</b>";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>User Authentication Example</h1>
+    <button onclick="authenticateUser()">Login</button>
+    <div id="auth"></div>
+</body>
+</html>
