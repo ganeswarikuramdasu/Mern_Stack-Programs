@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple and Special Data Types</title>
+    <script>
+        function showTypes() {
+            // Simple Types
+            let num = 100;      // Number
+            let str = "Hello";  // String
+            let bool = true;    // Boolean
+
+            // Special Types
+            let arr = [1,2,3];   // Array
+            let obj = {name:"Gani", age:21}; // Object
+            let func = function(){return "Hi!";}; // Function
+            let n = null;        // Null
+            let u;               // Undefined
+
+            let output = `
+                <h3>Simple Types</h3>
+                Number: ${num} <br>
+                String: ${str} <br>
+                Boolean: ${bool} <br>
+                <h3>Special Types</h3>
+                Array: [${arr}] <br>
+                Object: ${JSON.stringify(obj)} <br>
+                Function: ${func()} <br>
+                Null: ${n} <br>
+                Undefined: ${u} <br>
+            `;
+
+            document.getElementById("types").innerHTML = output;
+        }
+    </script>
+</head>
+<body>
+    <h1>Simple and Special Data Types Example</h1>
+    <button onclick="showTypes()">Show Types</button>
+    <div id="types"></div>
+</body>
+</html>
