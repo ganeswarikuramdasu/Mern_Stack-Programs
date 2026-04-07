@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile Links</title>
+</head>
+<body>
+
+<a href="https://yourprofile.com" target="_blank">
+    <img src="your-image.jpg" height="200" width="200">
+</a>
+
+<a href="https://friendprofile.com" target="_blank">
+    <img src="friend-image.jpg" height="200" width="200">
+</a>
+
+</body>
+</html>
