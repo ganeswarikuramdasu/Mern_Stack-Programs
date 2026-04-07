@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selectors</title>
+    <style>
+        p {
+            color: blue;
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+
+        #special {
+            color: red;
+        }
+
+        div p {
+            font-size: 18px;
+        }
+
+        div > h3 {
+            color: green;
+        }
+
+        h3 + p {
+            font-style: italic;
+        }
+
+        h3 ~ p {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<h2 id="special">Simple Selectors</h2>
+<p>This is a paragraph</p>
+<p class="highlight">This is highlighted</p>
+
+<div>
+    <h3>Combinator Selectors</h3>
+    <p>First paragraph inside div</p>
+    <p>Second paragraph inside div</p>
+</div>
+
+<p>Adjacent paragraph</p>
+<p>General sibling paragraph</p>
+
+</body>
+</html>
