@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Output Methods</title>
+</head>
+<body>
+
+<h2 id="heading"></h2>
+
+<p id="para"></p>
+
+<script>
+    document.getElementById("heading").innerHTML = "Output using innerHTML";
+
+    document.write("Output using document.write <br>");
+
+    window.alert("Output using alert");
+
+    console.log("Output using console.log");
+
+    document.getElementById("para").textContent = "Output using textContent";
+</script>
+
+</body>
+</html>
